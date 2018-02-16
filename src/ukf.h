@@ -72,6 +72,13 @@ public:
     
   ///* the current NIS for laser
   double NIS_laser_;
+    
+  ///* Radar measurement noise covariance matrix
+  MatrixXd R_radar_;
+    
+  ///* Lidar measurement noise covariance matrix
+  MatrixXd R_lidar_;
+    
 
 
   /**
@@ -108,6 +115,8 @@ public:
    * @param meas_package The measurement at k+1
    */
   void UpdateRadar(MeasurementPackage meas_package);
+    
+  void Update(MeasurementPackage meas_package, MatrixXd Zsig, int n_z);
 };
 
 #endif /* UKF_H */
