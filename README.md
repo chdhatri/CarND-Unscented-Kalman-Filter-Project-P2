@@ -24,16 +24,16 @@ The program main.cpp has already been filled out, but feel free to modify it.
 Here is the main protcol that main.cpp uses for uWebSocketIO in communicating with the simulator.
 
 
-INPUT: values provided by the simulator to the c++ program
+##### INPUT: values provided by the simulator to the c++ program
 
-["sensor_measurement"] => the measurment that the simulator observed (either lidar or radar)
+     ["sensor_measurement"] => the measurment that the simulator observed (either lidar or radar)
 
 
-OUTPUT: values provided by the c++ program to the simulator
+##### OUTPUT: values provided by the c++ program to the simulator
 
-RMSE = [0.0772, 0.0868, 0.3618, 0.2720]
+      'RMSE = [0.0772, 0.0868, 0.3618, 0.2720]'
 
-Threshold: RMSE <= [.09, .10, .40, .30]
+      'Threshold: RMSE <= [.09, .10, .40, .30]'
 
 ---
 
